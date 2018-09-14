@@ -1,7 +1,5 @@
 # helloworld-vim
 
----
-
 ## Overview
 
 This is a simple vim plugin. It outputs "Hello World!" in command line.
