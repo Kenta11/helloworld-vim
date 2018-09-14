@@ -2,7 +2,7 @@
 scriptencoding utf-8
 
 " load control
-if exists('g:helloworld_vim')
+if !exists('g:helloworld_vim')
     finish
 endif
 let g:helloworld_vim = 1
@@ -11,8 +11,9 @@ let g:helloworld_vim = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-" processing
-nmap z :call helloworld-vim#helloworld()<CR>
+function! helloworld-vim#helloworld()
+    echo "Hello World!"
+endfunction
 
 " restore user setting
 let &cpo = s:save_cpo
