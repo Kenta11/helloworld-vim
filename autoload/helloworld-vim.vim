@@ -2,16 +2,16 @@
 scriptencoding utf-8
 
 " load control
-if !exists('g:loaded_helloworld_vim')
+if !exists('g:loaded_helloworld-vim')
     finish
 endif
-let g:loaded_helloworld_vim = 1
+let g:loaded_helloworld-vim = 1
 
 " evacuate user setting temporarily
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! helloworld_vim#helloworld()
+function! helloworld-vim#helloworld()
     echo "Hello World!"
 endfunction
 
