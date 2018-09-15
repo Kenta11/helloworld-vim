@@ -12,7 +12,7 @@ let s:save_cpo = &cpo
 set cpo&vim
 
 pyfile <sfile>:h:h/src/hello.py
-python import vim
+python3 import vim
 
 function! helloworldvim#helloworld()
     python3 helloworld()
