@@ -11,7 +11,7 @@ let g:loaded_helloworldvim = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-pyfile <sfile>:h:h/src/hello.py
+py3file <sfile>:h:h/src/hello.py
 python3 import vim
 
 function! helloworldvim#helloworld()
