@@ -11,8 +11,11 @@ let g:loaded_helloworldvim = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
+pyfile <sfile>:h:h/src/hello.py
+python import vim
+
 function! helloworldvim#helloworld()
-    echo "Hello World!"
+    python3 helloworld()
 endfunction
 
 " restore user setting
